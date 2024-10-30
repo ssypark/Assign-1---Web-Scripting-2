@@ -4,10 +4,10 @@ This is a single-page React website for Assignment 1 for Web Scripting 2 course 
 
 ## Author
 Samuel Park
-Student ID: A009
+Student ID: A00943561
 
 ## Project Description
-The Pog Vault is a single-page e-commerce website dedicated to selling collectible Pogs. The website allows users to browse different Pog products, view details, and make purchases. The website is built using React.js with Vite.js and styled using Tailwind CSS.
+The Pog Vault is a single-page e-commerce website dedicated to selling collectible Pogs (I felt nostalgic). The website allows users to browse different Pog products, view details, favorite them and make purchases. The website is built using React.js with Vite.js and styled using Tailwind CSS.
 
 ## Features
 - Display of 6 Pog products with images, names, descriptions, and prices.
@@ -25,11 +25,11 @@ The Pog Vault is a single-page e-commerce website dedicated to selling collectib
 ## Installation Instructions
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-project-directory.git
+    git clone https://github.com/ssypark/Assign-1---Web-Scripting-2.git
     ```
 2. **Navigate into the project directory:**
     ```bash
-    cd your-project-directory
+    cd Assign-1---Web-Scripting-2
     ```
 3. **Install dependencies:**
     ```bash
