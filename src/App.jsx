@@ -8,14 +8,14 @@ const DEFAULT_POGS = [
   {
     id: 1,
     name: "Metal Slammers",
-    price: 9.99,
+    price: 2.99,
     image: "src/assets/pog-slammer.png",
     description: "Heavy-duty Metal Slammers for intense Pog battles."
   },
   {
     id: 2,
     name: "Pog Carrying Case",
-    price: 14.99,
+    price: 3.99,
     image: "src/assets/pog-tube.png",
     description: "Keep your Pogs safe with this stylish carrying tube."
   },
@@ -55,7 +55,7 @@ function App() {
     JSON.parse(localStorage.getItem("favorites")) || []
   );
 
-  // Toggle favorite status for a pog
+  // Toggle favorite status for products
   const handleFavClick = (pogId) => {
     let updatedFavorites;
     if (favorites.includes(pogId)) {
@@ -69,17 +69,17 @@ function App() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-green-900 to-sky-950 min-h-screen p-8">
+    <div className="bg-black min-h-screen p-8">
       <div className="relative">
         <img src={pogBanner} alt="Pog Banner" className="w-full h-auto object-cover brightness-50" />
         <header className="absolute inset-0 flex items-center justify-center text-white">
-          <h1 className="font-hanalei text-9xl drop-shadow-lg"> The Pog Vault </h1>
+          <h1 className="font-hanalei text-9xl text-white drop-shadow-xl"> The Pog Vault </h1>
         </header>
       </div>
 
       <main className="p-5 bg-cyan-950">
 
-        <h2 className="font-hanalei text-6xl mt-4 text-white drop-shadow-lg">Featured Products</h2>
+        <h2 className="font-hanalei text-6xl mt-4 mb-2 text-white drop-shadow-lg">Featured Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
           {pogs.map((pog) => (
             <Pog
