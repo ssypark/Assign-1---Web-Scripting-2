@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './index.css';
 import Pog from "./Pog";
+import pogLogo from "./assets/pog-logo.png";
 import pogBanner from "./assets/pog-banner.png";
 import pogSlammer from "./assets/pog-slammer.png";
 import pogTube from "./assets/pog-tube.png";
@@ -76,7 +77,22 @@ function App() {
 
   return (
     <div className="bg-black min-h-screen p-8">
-      <div className="relative">
+      {/* Navbar */}
+      <nav className="flex items-center justify-between p-4 bg-stone-900 text-white">
+        <div className="flex items-center space-x-2">
+          <img src={pogLogo} alt="pog logo" className="w-10 h-10" />
+          <span className="text-xl font-hanalei">The Pog Vault</span>
+        </div>
+        <div className="flex space-x-6">
+          <a href="#home" className="hover:text-teal-400">Home</a>
+          <a href="#shop" className="hover:text-teal-400">Shop</a>
+          <a href="#favorites" className="hover:text-teal-400">Favorites</a>
+          <a href="#contact" className="hover:text-teal-400">Contact</a>
+        </div>
+      </nav>
+
+      {/* Banner */}
+      <div className="relative mt-4">
         <img src={pogBanner} alt="Pog Banner" className="w-full h-auto object-cover brightness-50" />
         <header className="absolute inset-0 flex items-center justify-center text-white">
           <h1 className="font-hanalei text-9xl text-white drop-shadow-xl"> The Pog Vault </h1>
