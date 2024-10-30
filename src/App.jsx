@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import './index.css';
 import Pog from "./Pog";
 import pogBanner from "./assets/pog-banner.png";
+import pogSlammer from "./assets/pog-slammer.png";
+import pogTube from "./assets/pog-tube.png";
+import dndPogs from "./assets/dnd-pogs.png";
+import spaceJamPogs from "./assets/spacejam-pogs.png";
+import nintendoPogs from "./assets/nintendo-pogs.png";
+import casperPogs from "./assets/casper-pogs.png";
 import IonIcon from "@reacticons/ionicons";
 
 const DEFAULT_POGS = [
@@ -9,42 +15,42 @@ const DEFAULT_POGS = [
     id: 1,
     name: "Metal Slammers",
     price: 2.99,
-    image: "src/assets/pog-slammer.png",
+    image: pogSlammer,
     description: "Heavy-duty Metal Slammers for intense Pog battles."
   },
   {
     id: 2,
     name: "Pog Carrying Case",
     price: 3.99,
-    image: "src/assets/pog-tube.png",
+    image: pogTube,
     description: "Keep your Pogs safe with this stylish carrying tube."
   },
   {
     id: 3,
     name: "Dungeons & Dragons Pog Pack",
     price: 7.99,
-    image: "src/assets/dnd-pogs.png",
+    image: dndPogs,
     description: "These Dungeons & Dragons pogs feature art from the covers of various Dungeons & Dragons books. On the back of each pog it has the name of the artwork / book and the artist's name."
   },
   {
     id: 4,
     name: "Space Jam Pog Pack",
     price: 6.99,
-    image: "src/assets/spacejam-pogs.png",
+    image: spaceJamPogs,
     description: "This set of pogs features various characters from the 1996 film Space Jam. They would have been given away with yoghurts sold by Danone."
   },
   {
     id: 5,
     name: "Nintendo Pog Pack",
     price: 8.99,
-    image: "src/assets/nintendo-pogs.png",
+    image: nintendoPogs,
     description: "The Nintendo Greatest Games of All Time pogs come in a sheet of card with 8 caps cut into it. The back of the card and caps is blank."
   },
   {
     id: 6,
     name: "Casper Pog Pack",
     price: 9.49,
-    image: "src/assets/casper-pogs.png",
+    image: casperPogs,
     description: "These Casper pogs / milkcaps were released in 1995 to tie in with the release of the film 'Casper'. The pogs feature scenes and characters from the film."
   }
 ];
