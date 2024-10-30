@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import './App.css'
+import HomePage from './HomePage.jsx'
 
 function App() {
 
 
   return (
-    <>
-    <h1 className="text-2xl font-bold mb-4">Hello World</h1>
-    </>
+    <HomePage />
   )
 }
 
